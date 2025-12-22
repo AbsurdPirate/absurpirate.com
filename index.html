@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Absurd Pirate's Internet Lounge</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+    <script src="https://iframe.chat/scripts/main.min.js"></script>
+  </head>
+  <body>
+    <!--HEADER SECTION-->
+    <header class="bumpered">
+      <h1>Absurd Pirate's Internet Lounge</h1>
+      <p id="message"></p>
+    </header>
+    <nav
+      class="bumpered"
+      style="
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 50px;
+      "
+    >
+      <a href="#">About</a>
+      <a href="#">Blog</a>
+      <a href="#">Guestbook</a>
+    </nav>
+
+    <!--PANELS-->
+    <img
+      src="media/img/ipod.png"
+      alt=""
+      srcset=""
+      style="position: absolute; width: 300px; top: 100px; left: 1400px"
+    />
+    <a
+      href="media/docs/yourewelcomecomrad.pdf"
+      download
+      style="position: absolute; width: 250px; top: 500px; left: 70px"
+    >
+      <img src="media/gifs/marx-ad.gif" alt="" srcset="" />
+    </a>
+    <!--END PANELS-->
+
+    <!--MAIN SECTION-->
+    <main class="bumpered">
+      <!--ROW 1-->
+      <section id="row-1">
+        <div id="status">
+          <img
+            src="media/img/robbierotten.jpg"
+            alt=""
+            srcset=""
+            width="150px"
+          />
+          <div id="statuscafe">
+            <strong>Current Status</strong>
+            <div id="statuscafe-username"></div>
+            <div id="statuscafe-content"></div>
+          </div>
+          <script
+            src="https://status.cafe/current-status.js?name=absurdpirate"
+            defer
+          ></script>
+        </div>
+        <div id="greeting" class="left" style="width: 750px; height: 250px">
+          <h1>Ahoy!</h1>
+        </div>
+      </section>
+      <!--ROW 2-->
+      <section id="row-2" style="height: 50px">BADGES SECTION</section>
+      <!--ROW 3-->
+      <section id="row-3" style="height: 250px">
+        <iframe
+          src="https://iframe.chat/embed?chat=88527056"
+          id="chattable"
+          frameborder="none"
+        ></iframe>
+        <script>
+          chattable.initialize({
+            theme: "Windows XP",
+          });
+        </script>
+        <div id="piratetv" class="left" style="width: 600px">
+          VIDEO SECTION!
+        </div>
+      </section>
+      <!--ROW 4-->
+      <section id="row-4">
+        <div>
+          <div
+            id="contact"
+            style="height: 150px; border-bottom: 3px double black"
+          >
+            Contact Me
+          </div>
+          <div>Something heres</div>
+        </div>
+        <div id="friends" class="bumpered">Friends of Absurd Pirate</div>
+        <div>
+          <div
+            id="guestbook"
+            style="height: 150px; border-bottom: 3px double black"
+          >
+            Sign my Guestbook... Or else
+          </div>
+          <div>something here</div>
+        </div>
+      </section>
+    </main>
+    <!--FOOTER SECTION-->
+    <footer class="bumpered">&copy; Absurd Pirate 2025</footer>
+  </body>
+</html>
