@@ -61,6 +61,17 @@ section {
   border-bottom: 3px double black;
 }
 
+#row-2 {
+  display: flex;
+  overflow-x: hidden;
+  padding: 5px 0;
+  background-color: black;
+}
+
+#row-2 img {
+  padding: 0 5px;
+}
+
 #row-4 {
   height: 300px;
 }

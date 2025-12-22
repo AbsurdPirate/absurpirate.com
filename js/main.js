@@ -6,6 +6,7 @@ const messages = [
   "Were it so easy...",
   "Hi Mom!",
   "Play Halo 3!",
+  "Please don't sue me",
 ];
 
 //Titletron vars
