@@ -10,21 +10,15 @@
   </head>
   <body>
     <!-- HEADER SECTION -->
-    <header class="bumpered" style="text-align: center">
+    <header style="text-align: center">
       <img src="src/img/Logo.png" alt="logo" />
       <p id="message"></p>
     </header>
     <!-- NAVIGATION -->
-    <nav
-      class="bumpered"
-      style="
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        height: 50px;
-      "
-    >
-      <a href="#"><img src="src/links/about.png" alt="" srcset="" /> About</a>
+    <nav>
+      <a href="about.html"
+        ><img src="src/links/about.png" alt="" srcset="" /> About</a
+      >
       <a href="https://blog.absurdpirate.com"
         ><img src="src/links/blog.png" alt="blog-icon" />Blog</a
       >
@@ -98,22 +92,37 @@
       </section>
       <!-- END ROW 1 -->
       <!--ROW 2-->
-      <section id="row-2" style="height: 50px">
-        <img src="src/stamps/stamp_gameboy.gif" alt="" srcset="" />
-        <img src="src/stamps/stamp_halo3.gif" alt="" srcset="" />
-        <img src="src/stamps/stamp_music_love.gif" alt="" srcset="" />
-        <img src="src/stamps/stamp_palestine.png" alt="" srcset="" />
-        <img src="src/stamps/stamp_pride.png" alt="" srcset="" />
-        <img src="src/stamps/stamp_record.gif" alt="" srcset="" />
-        <img src="src/stamps/stamp_too_funny.jpg" alt="" srcset="" />
-        <img src="src/stamps/stamp_use_paper.gif" alt="" srcset="" />
-        <img src="src/stamps/stamp_viddy_games.png" alt="" srcset="" />
-        <img src="src/stamps/stamp_windows.gif" alt="" srcset="" />
-        <img src="src/stamps/stamp_xbox.png" alt="" srcset="" />
+      <section id="row-2">
+        <div class="marquee">
+          <img src="src/stamps/stamp_gameboy.gif" alt="" srcset="" />
+          <img src="src/stamps/stamp_halo3.gif" alt="" srcset="" />
+          <img src="src/stamps/stamp_music_love.gif" alt="" srcset="" />
+          <img src="src/stamps/stamp_palestine.png" alt="" srcset="" />
+          <img src="src/stamps/stamp_pride.png" alt="" srcset="" />
+          <img src="src/stamps/stamp_record.gif" alt="" srcset="" />
+          <img src="src/stamps/stamp_too_funny.jpg" alt="" srcset="" />
+          <img src="src/stamps/stamp_use_paper.gif" alt="" srcset="" />
+          <img src="src/stamps/stamp_viddy_games.png" alt="" srcset="" />
+          <img src="src/stamps/stamp_windows.gif" alt="" srcset="" />
+          <img src="src/stamps/stamp_xbox.png" alt="" srcset="" />
+        </div>
+        <div class="marquee">
+          <img src="src/stamps/stamp_gameboy.gif" alt="" srcset="" />
+          <img src="src/stamps/stamp_halo3.gif" alt="" srcset="" />
+          <img src="src/stamps/stamp_music_love.gif" alt="" srcset="" />
+          <img src="src/stamps/stamp_palestine.png" alt="" srcset="" />
+          <img src="src/stamps/stamp_pride.png" alt="" srcset="" />
+          <img src="src/stamps/stamp_record.gif" alt="" srcset="" />
+          <img src="src/stamps/stamp_too_funny.jpg" alt="" srcset="" />
+          <img src="src/stamps/stamp_use_paper.gif" alt="" srcset="" />
+          <img src="src/stamps/stamp_viddy_games.png" alt="" srcset="" />
+          <img src="src/stamps/stamp_windows.gif" alt="" srcset="" />
+          <img src="src/stamps/stamp_xbox.png" alt="" srcset="" />
+        </div>
       </section>
       <!-- END ROW 2 -->
       <!--ROW 3-->
-      <section id="row-3" style="height: 250px">
+      <section id="row-3">
         <iframe
           src="https://iframe.chat/embed?chat=88527056"
           id="chattable"
@@ -124,17 +133,19 @@
             theme: "Windows XP",
           });
         </script>
-        <div id="jukebox" class="left" style="width: 750px">
-          <div id="control-center">
-            <h3>Jukebox</h3>
-            <audio controls>
-              <source src="horse.ogg" type="audio/ogg" />
-              <source src="horse.mp3" type="audio/mpeg" />
-              Your browser does not support the audio element.
-            </audio>
-            <div id="selection"></div>
+        <div class="win-panel" style="width: 750px">
+          <h3>Jukebox</h3>
+          <div class="content" id="jukebox">
+            <div id="control-center">
+              <audio controls>
+                <source src="horse.ogg" type="audio/ogg" />
+                <source src="horse.mp3" type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+              <div id="selection"></div>
+            </div>
+            <img src="src/img/ipod.png" alt="" srcset="" height="210px" />
           </div>
-          <img src="src/img/ipod.png" alt="" srcset="" />
         </div>
       </section>
       <!-- END ROW 3 -->

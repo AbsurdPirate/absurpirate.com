@@ -1,4 +1,4 @@
-// Message of the Day vars
+// MESSAGE OF THE DAY VARS
 const message_of_the_day = document.getElementById("message");
 const messages = [
   "Made with all the love I'm legally allowed to give",
@@ -7,16 +7,22 @@ const messages = [
   "Hi Mom!",
   "Play Halo 3!",
   "Please don't sue me",
+  "Still workin' on it... probably",
+  "Check out the Grizzly Gazette!",
 ];
 
-// Song List
+// SONG LIST VARS
 const song_list = document.getElementById("selection");
 const songs = [
   ["LOOK YOUR BACK!", "Himiko Kikuchi", "Flying Beagle"],
   ["Scattered", "Green Day", "nimrod."],
   ["Same Man I Was Before", "Oingo Boingo", "Dead Man's Party"],
-  ["Scattered", "Green Day", "nimrod."],
+  ["LvUrFR3NZ", "Princeton", "Halo 3 Soundtrack"],
 ];
+
+// STAMP CAROUSEL VARS
+const stamps = document.getElementById("row-2");
+const stamp = stamps.children;
 
 //Titletron vars
 const delay = (ms) => new Promise((res) => setTimeout(res, ms));
@@ -67,4 +73,6 @@ function loadSite() {
   generateMessage();
 }
 
-document.addEventListener("DOMContentLoaded", loadSite, false);
+loadSite();
+
+//document.addEventListener("DOMContentLoaded", loadSite, false);
