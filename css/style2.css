@@ -1,0 +1,300 @@
+/*
+* Global Selectors
+*/
+@font-face {
+	font-family: "pixel";
+	src: url("../src/fonts/Minecraft.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: rocketship;
+	src: url("../src/fonts/Supersonic\ Rocketship.ttf");
+}
+:root {
+	--primary-green: #61ce8c;
+	--green-dark: #48bc76;
+	--green-light: #8fe9b3;
+	--primary-purple: #ad6bf9;
+	--purple-light: #c08ef8;
+	--purple-dark: #8b44db;
+	--font: verdana, arial, sans-serif, helvetica;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: var(--font);
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	min-height: 920px;
+	background-color: rgb(128, 121, 131);
+}
+
+header,
+main,
+footer {
+	width: 1200px;
+}
+
+/*
+* HEADER
+*/
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+#section-logo {
+	width: 600px;
+	height: 175px;
+	background-color: var(--primary-green);
+	border-top-left-radius: 30px;
+}
+
+#logo {
+	position: relative;
+	font-family: rocketship;
+	font-size: 32pt;
+	text-align: center;
+	color: #ad6bf9;
+	text-shadow: 2px 2px black;
+	top: 10px;
+	left: -190px;
+	rotate: -10deg;
+}
+
+#left {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 600px;
+}
+
+#message-container {
+	background-color: black;
+	width: 620px;
+	height: 30px;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#message {
+	font-family: "pixel";
+	letter-spacing: 2pt;
+	width: 500px;
+	float: right;
+	text-align: center;
+	animation-name: pulse;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	z-index: 1;
+}
+
+#right {
+	position: absolute;
+	left: 1000px;
+	width: 500px;
+	height: 200px;
+	color: white;
+	background-color: var(--primary-purple);
+	border-top: 3px solid var(--purple-light);
+	border-right: 3px solid var(--purple-dark);
+	border-bottom: 3px solid var(--purple-dark);
+	border-left: 3px solid var(--purple-light);
+	margin: 20px 20px;
+	padding: 10px;
+}
+
+/*
+* MAIN CONTENT
+*/
+
+main {
+	height: 500px;
+	display: flex;
+}
+
+/*
+* NAV
+*/
+nav {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 120px;
+	background-color: rgb(49, 49, 49);
+	border-left: 3px solid var(--primary-purple);
+}
+
+nav > div {
+	padding-left: 5px;
+}
+
+nav h3 {
+	font-family: rocketship;
+	margin-top: 10px;
+	color: #61ce8c;
+	letter-spacing: 0.2rem;
+}
+
+.nav-link {
+	list-style: none;
+	margin-left: 10px;
+	color: white;
+}
+
+.nav-link > a {
+	text-decoration: none;
+	color: white;
+}
+
+/*
+* CONTENT
+*/
+
+#content {
+	width: 1080px;
+}
+
+#spacer {
+	width: 1080px;
+}
+
+#spacer-block {
+	background-color: #61ce8c;
+	width: 475px;
+	height: 50px;
+}
+
+.item {
+	width: fit-content;
+}
+
+/*
+* STAMP MARQUEE
+*/
+
+#bottom-marquee {
+	width: 1194px;
+	display: flex;
+	align-items: center;
+	overflow-x: hidden;
+	padding: 5px 0;
+	background-color: black;
+	border-top: 3px solid var(--green-dark);
+	border-bottom: 3px solid var(--green-dark);
+	border-left: 3px solid orange;
+	border-right: 3px solid lightskyblue;
+}
+
+.marquee {
+	display: flex;
+	align-items: center;
+	animation: loop 10s infinite linear;
+}
+
+.marquee img {
+	display: flex;
+	padding: 0 5px;
+	height: 50px;
+}
+
+/*
+* FOOTER
+*/
+
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	background-color: var(--primary-green);
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+
+/*
+* FLOATERS
+*/
+
+.floater {
+	position: absolute;
+}
+
+#floater-jukebox {
+	top: 50px;
+	left: 1625px;
+}
+
+.win-panel {
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	background-color: #8fe9b3;
+	border-radius: 3px;
+	border: 2px solid #48bc76;
+}
+
+.win-panel h3 {
+	color: white;
+	padding: 3px 10px;
+	font-size: 9pt;
+	background: #74e8a2;
+	background: linear-gradient(
+		0deg,
+		#74e8a2 1%,
+		#61ce8c 49%,
+		#48bc76 51%,
+		#8fe9b3 90%
+	);
+}
+
+.content {
+	display: flex;
+	background-color: white;
+	margin: 0 3px 3px 3px;
+	height: 100%;
+	border: 3px solid var(--primary-green);
+}
+
+#jukebox {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#jukebox * {
+	max-width: 250px;
+}
+
+/*
+* KEYFRAMES
+*/
+@keyframes loop {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(-100%);
+	}
+}
+
+@keyframes pulse {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.1);
+	}
+}
