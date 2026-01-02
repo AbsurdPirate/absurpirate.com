@@ -1,33 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to Absurd Pirate's Internet Lounge</title>
-  </head>
-  <body>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
-      main {
-        text-align: center;
-      }
-    </style>
-    <main>
-      <h1>Ahoy there!</h1>
-      <p>
-        Welcome to my lounge!<br />
-        <span>Warning:</span> This site is not mobile optimized (yet...)<br />
-        <a href="lounge.html">Shut up and Lemme In already!</a>
-      </p>
-    </main>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Welcome to Absurd Pirate's Internet Lounge</title>
+	</head>
+	<body>
+		<style>
+			@font-face {
+				font-family: rocketship;
+				src: url("src/fonts/Supersonic\ Rocketship.ttf");
+			}
+			:root {
+				--primary-green: #61ce8c;
+				--green-dark: #48bc76;
+				--green-light: #8fe9b3;
+				--primary-purple: #ad6bf9;
+				--purple-light: #c08ef8;
+				--purple-dark: #8b44db;
+				--font: verdana, arial, sans-serif, helvetica;
+			}
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			body {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				background-color: black;
+				color: white;
+			}
+
+			#logo {
+				position: absolute;
+				top: 20%;
+			}
+
+			main {
+				text-align: center;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			#enter {
+				font-family: rocketship;
+				background-color: var(--primary-green);
+				transform: skew(-0.06turn, 18deg);
+				font-size: 32pt;
+				padding: 20px;
+				width: 150px;
+			}
+
+			#enter a {
+				color: var(--primary-purple);
+				text-decoration: none;
+			}
+		</style>
+		<img id="logo" src="src/img/logo-1.png" alt="logo" width="1000px" />
+		<main>
+			<h1>Ahoy there!</h1>
+			<p>
+				Welcome to my lounge!<br />
+				<span>Warning:</span> This site is not mobile optimized
+				(yet...)<br />
+			</p>
+			<div id="enter">
+				<a href="lounge.html">ENTER!</a>
+			</div>
+		</main>
+	</body>
 </html>
