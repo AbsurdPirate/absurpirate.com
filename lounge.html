@@ -1,112 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Absurd Pirate's Internet Lounge</title>
-		<link rel="stylesheet" href="css/style2.css" />
-		<script src="js/main.js" defer></script>
-	</head>
-	<body>
-		<div>
-			<header>
-				<section id="left">
-					<div id="section-logo">
-						<h1 id="logo">Absurd Pirate's<br />Internet Lounge</h1>
-					</div>
-					<div id="message-container">
-						<p id="message"></p>
-					</div>
-					<section id="separator">
-						<li class="nav-link">
-							<a href="index.html">Entrance</a>
-						</li>
-						<div id="spacer">
-							<div id="spacer-block"></div>
-						</div>
-					</section>
-				</section>
-				<section id="right">
-					<h2>Ahoy There!</h2>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Harum consequatur aut rerum quaerat facilis nostrum
-						ratione ipsam, velit, obcaecati quam nihil temporibus?
-						Necessitatibus dolores mollitia at. Perspiciatis
-						accusamus optio maiores.
-					</p>
-				</section>
-			</header>
-			<!-- MAIN-->
-			<main>
-				<!-- NAV -->
-				<nav>
-					<div>
-						<h3>Personal</h3>
-						<ul>
-							<li class="nav-link">
-								<a href="about.html">About</a>
-							</li>
-							<li class="nav-link">
-								<a href="about.html">Show & Tell</a>
-							</li>
-						</ul>
-						<h3>Blogs</h3>
-						<ul>
-							<li class="nav-link">
-								<a href="https://blog.absurdpirate.com"
-									>Main Blog</a
-								>
-							</li>
-							<li class="nav-link">
-								<a href="https://apmicros.bearblog.dev"
-									>Micro Blog</a
-								>
-							</li>
-						</ul>
-						<h3>Shrines</h3>
-						<ul>
-							<li class="nav-link">Classic Halo</li>
-							<li class="nav-link">DOOM</li>
-						</ul>
-					</div>
-				</nav>
-				<!-- END NAV -->
-				<!-- CONTENT -->
-				<section id="content">
-					<div id="container">
-						<!-- CHATBOX -->
-						<div id="chat-panel" class="win-panel item">
-							<h3>Chat with other visitors!</h3>
-							<div class="content" style="height: 250px">
-								<iframe
-									src="https://iframe.chat/embed?chat=88527056"
-									id="chattable"
-									frameborder="none"
-								></iframe>
-								<script>
-									chattable.initialize({
-										theme: "Windows XP",
-									});
-								</script>
-							</div>
-						</div>
-						<!-- END CHATBOX -->
-						<div>
-							<!-- CHANGELOG -->
-							<iframe
-								class="item"
-								style="
-									background-color: yellow;
-									border-top: 20px solid rgb(95, 79, 58);
-									height: 230px;
-									width: 250px;
-								"
-								src="src/docs/changelogs/v1-0.md"
-								frameborder="0"
-							></iframe>
-							<!-- END CHANGELOG -->
-							<!-- WEBRING
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Absurd Pirate's Internet Lounge</title>
+    <link rel="stylesheet" href="css/style2.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <section id="left">
+        <div id="section-logo">
+          <h1 id="logo">Absurd Pirate's<br />Internet Lounge</h1>
+        </div>
+        <div id="message-container">
+          <p id="message"></p>
+        </div>
+      </section>
+      <section id="right">
+        <h2>Ahoy There!</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+          consequatur aut rerum quaerat facilis nostrum ratione ipsam, velit,
+          obcaecati quam nihil temporibus? Necessitatibus dolores mollitia at.
+          Perspiciatis accusamus optio maiores.
+        </p>
+      </section>
+    </header>
+    <!-- MAIN-->
+    <main>
+      <!-- NAV -->
+      <nav>
+        <div>
+          <li class="nav-link">
+            <a href="index.html">Entrance</a>
+          </li>
+          <h3>Personal</h3>
+          <ul>
+            <li class="nav-link"><a href="about.html">About</a></li>
+            <li class="nav-link">
+              <a href="about.html">Show & Tell</a>
+            </li>
+          </ul>
+          <h3>Blogs</h3>
+          <ul>
+            <li class="nav-link">
+              <a href="https://blog.absurdpirate.com">Main Blog</a>
+            </li>
+            <li class="nav-link">
+              <a href="https://apmicros.bearblog.dev">Micro Blog</a>
+            </li>
+          </ul>
+          <h3>Shrines</h3>
+          <ul>
+            <li class="nav-link">Classic Halo</li>
+            <li class="nav-link">DOOM</li>
+          </ul>
+        </div>
+      </nav>
+      <!-- END NAV -->
+      <!-- CONTENT -->
+      <section id="content">
+        <div id="spacer">
+          <div id="spacer-block"></div>
+        </div>
+        <div id="container">
+          <!-- CHATBOX -->
+          <div id="chat-panel" class="win-panel item">
+            <h3>Chat with other visitors!</h3>
+            <div class="content" style="height: 250px">
+              <iframe
+                src="https://iframe.chat/embed?chat=88527056"
+                id="chattable"
+                frameborder="none"
+              ></iframe>
+              <script>
+                chattable.initialize({
+                  theme: "Windows XP",
+                });
+              </script>
+            </div>
+          </div>
+          <!-- END CHATBOX -->
+          <div>
+            <!-- CHANGELOG -->
+            <iframe
+              class="item"
+              style="
+                background-color: yellow;
+                border-top: 20px solid rgb(95, 79, 58);
+                height: 230px;
+                width: 250px;
+              "
+              src="src/docs/changelogs/v1-0.md"
+              frameborder="0"
+            ></iframe>
+            <!-- END CHANGELOG -->
+            <!-- WEBRING-->
             <webring-css
               site="https://absurdpirate.com/"
               custom-style="
@@ -119,125 +109,68 @@
             </webring-css>
             <script src="https://atignister.github.io/webring_simplechats.js"></script>
             <!-- WEBRING-->
-						</div>
-						<!-- JUKEBOX -->
-						<div class="win-panel">
-							<h3>Jukebox (coming soon...)</h3>
-							<div class="content" id="jukebox">
-								<img
-									src="src/img/ipod.png"
-									alt=""
-									height="150px"
-								/>
-								<div id="control-center">
-									<audio controls>
-										<source
-											src="horse.ogg"
-											type="audio/ogg"
-										/>
-										<source
-											src="horse.mp3"
-											type="audio/mpeg"
-										/>
-										Your browser does not support the audio
-										element.
-									</audio>
-									<div id="selection"></div>
-								</div>
-							</div>
-						</div>
-						<!-- END JUKEBOX -->
-					</div>
-				</section>
-				<!-- END CONTENT -->
-			</main>
-			<!-- END MAIN -->
-			<!-- STAMP MARQUEE-->
-			<section id="bottom-marquee">
-				<div class="marquee">
-					<img src="src/stamps/stamp_doom.gif" alt="stamp-doom" />
-					<img
-						src="src/stamps/stamp_gameboy.gif"
-						alt="stamp-gameboy"
-					/>
-					<img src="src/stamps/stamp_halo3.gif" alt="stamp-halo3" />
-					<img
-						src="src/stamps/stamp_music_love.gif"
-						alt="stamp-music"
-					/>
-					<img
-						src="src/stamps/stamp_palestine.png"
-						alt="stamp-palestine"
-					/>
-					<img src="src/stamps/stamp_pride.png" alt="stamp-pride" />
-					<img src="src/stamps/stamp_record.gif" alt="stamp-record" />
-					<img
-						src="src/stamps/stamp_too_funny.jpg"
-						alt="stamp-funny"
-					/>
-					<img
-						src="src/stamps/stamp_use_paper.gif"
-						alt="stamp-paper"
-					/>
-					<img
-						src="src/stamps/stamp_viddy_games.png"
-						alt="stamp-videogames"
-					/>
-					<img
-						src="src/stamps/stamp_windows.gif"
-						alt="stamp-windows"
-					/>
-					<img src="src/stamps/stamp_xbox.png" alt="stamp-xbox" />
-				</div>
-				<div class="marquee">
-					<img src="src/stamps/stamp_doom.gif" alt="stamp-doom" />
-					<img
-						src="src/stamps/stamp_gameboy.gif"
-						alt="stamp-gameboy"
-					/>
-					<img src="src/stamps/stamp_halo3.gif" alt="stamp-halo3" />
-					<img
-						src="src/stamps/stamp_music_love.gif"
-						alt="stamp-music"
-					/>
-					<img
-						src="src/stamps/stamp_palestine.png"
-						alt="stamp-palestine"
-					/>
-					<img src="src/stamps/stamp_pride.png" alt="stamp-pride" />
-					<img src="src/stamps/stamp_record.gif" alt="stamp-record" />
-					<img
-						src="src/stamps/stamp_too_funny.jpg"
-						alt="stamp-funny"
-					/>
-					<img
-						src="src/stamps/stamp_use_paper.gif"
-						alt="stamp-paper"
-					/>
-					<img
-						src="src/stamps/stamp_viddy_games.png"
-						alt="stamp-videogames"
-					/>
-					<img
-						src="src/stamps/stamp_windows.gif"
-						alt="stamp-windows"
-					/>
-					<img src="src/stamps/stamp_xbox.png" alt="stamp-xbox" />
-				</div>
-			</section>
-			<!-- END STAMP MARQUEE-->
-			<!--FOOTER SECTION-->
-			<footer>
-				<img
-					src="src/img/crafted-by-human.png"
-					alt=""
-					srcset=""
-				/><br />&copy; Absurd Pirate now and forever
-			</footer>
-			<!-- END FOOTER SECTION-->
-			<!-- FLOATERS -->
+          </div>
+          <!-- JUKEBOX -->
+          <div class="win-panel">
+            <h3>Jukebox (coming soon...)</h3>
+            <div class="content" id="jukebox">
+              <img src="src/img/ipod.png" alt="" height="150px" />
+              <div id="control-center">
+                <audio controls>
+                  <source src="horse.ogg" type="audio/ogg" />
+                  <source src="horse.mp3" type="audio/mpeg" />
+                  Your browser does not support the audio element.
+                </audio>
+                <div id="selection"></div>
+              </div>
+            </div>
+          </div>
+          <!-- END JUKEBOX -->
+        </div>
+      </section>
+      <!-- END CONTENT -->
+    </main>
+    <!-- END MAIN -->
+    <!-- STAMP MARQUEE-->
+    <section id="bottom-marquee">
+      <div class="marquee">
+        <img src="src/stamps/stamp_doom.gif" alt="stamp-doom" />
+        <img src="src/stamps/stamp_gameboy.gif" alt="stamp-gameboy" />
+        <img src="src/stamps/stamp_halo3.gif" alt="stamp-halo3" />
+        <img src="src/stamps/stamp_music_love.gif" alt="stamp-music" />
+        <img src="src/stamps/stamp_palestine.png" alt="stamp-palestine" />
+        <img src="src/stamps/stamp_pride.png" alt="stamp-pride" />
+        <img src="src/stamps/stamp_record.gif" alt="stamp-record" />
+        <img src="src/stamps/stamp_too_funny.jpg" alt="stamp-funny" />
+        <img src="src/stamps/stamp_use_paper.gif" alt="stamp-paper" />
+        <img src="src/stamps/stamp_viddy_games.png" alt="stamp-videogames" />
+        <img src="src/stamps/stamp_windows.gif" alt="stamp-windows" />
+        <img src="src/stamps/stamp_xbox.png" alt="stamp-xbox" />
+      </div>
+      <div class="marquee">
+        <img src="src/stamps/stamp_doom.gif" alt="stamp-doom" />
+        <img src="src/stamps/stamp_gameboy.gif" alt="stamp-gameboy" />
+        <img src="src/stamps/stamp_halo3.gif" alt="stamp-halo3" />
+        <img src="src/stamps/stamp_music_love.gif" alt="stamp-music" />
+        <img src="src/stamps/stamp_palestine.png" alt="stamp-palestine" />
+        <img src="src/stamps/stamp_pride.png" alt="stamp-pride" />
+        <img src="src/stamps/stamp_record.gif" alt="stamp-record" />
+        <img src="src/stamps/stamp_too_funny.jpg" alt="stamp-funny" />
+        <img src="src/stamps/stamp_use_paper.gif" alt="stamp-paper" />
+        <img src="src/stamps/stamp_viddy_games.png" alt="stamp-videogames" />
+        <img src="src/stamps/stamp_windows.gif" alt="stamp-windows" />
+        <img src="src/stamps/stamp_xbox.png" alt="stamp-xbox" />
+      </div>
+    </section>
+    <!-- END STAMP MARQUEE-->
+    <!--FOOTER SECTION-->
+    <footer>
+      <img src="src/img/crafted-by-human.png" alt="" srcset="" /><br />&copy;
+      Absurd Pirate now and forever
+    </footer>
+    <!-- END FOOTER SECTION-->
+    <!-- FLOATERS -->
 
-			<!-- END FLOATERS-->
-		</div>
-	</body>
+    <!-- END FLOATERS-->
+  </body>
 </html>

@@ -42,7 +42,7 @@ header,
 main,
 #bottom-marquee,
 footer {
-  width: 900px;
+  width: 90em;
   box-sizing: border-box;
 }
 
@@ -373,11 +373,5 @@ audio {
   }
   to {
     transform: rotate(-360deg);
-  }
-}
-
-@media screen and (width >= 1700px) {
-  body > div {
-    zoom: 1.3;
   }
 }
