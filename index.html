@@ -1,139 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=1920px, initial-scale=1.0" />
-		<title>Welcome to Absurd Pirate's Internet Lounge</title>
-	</head>
-	<body>
-		<style>
-			@font-face {
-				font-family: rocketship;
-				src: url("src/fonts/Supersonic\ Rocketship.ttf");
-			}
-			:root {
-				--primary-green: #61ce8c;
-				--green-dark: #48bc76;
-				--green-light: #8fe9b3;
-				--primary-purple: #ad6bf9;
-				--purple-light: #c08ef8;
-				--purple-dark: #8b44db;
-				--font: verdana, arial, sans-serif, helvetica;
-			}
-			* {
-				margin: 0;
-				padding: 0;
-				font-family: var(--font);
-			}
-			body {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				height: 100vh;
-				background-color: black;
-				color: white;
-				overflow-x: hidden;
-				overflow-y: hidden;
-			}
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+    />
 
-			#logo {
-				position: absolute;
-				top: 20%;
-			}
+    <title>Welcome to Absurd Pirate's Internet Lounge</title>
+  </head>
+  <body>
+    <style>
+      @font-face {
+        font-family: rocketship;
+        src: url("src/fonts/Supersonic\ Rocketship.ttf");
+      }
+      :root {
+        --primary-green: #61ce8c;
+        --green-dark: #48bc76;
+        --green-light: #8fe9b3;
+        --primary-purple: #ad6bf9;
+        --purple-light: #c08ef8;
+        --purple-dark: #8b44db;
+        --font: verdana, arial, sans-serif, helvetica;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: var(--font);
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: black;
+        color: white;
+        overflow-x: hidden;
+        overflow-y: hidden;
+      }
 
-			main {
-				position: relative;
-				text-align: center;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				top: 100px;
-			}
+      #logo {
+        position: absolute;
+        top: 20%;
+      }
 
-			h1 {
-				font-family: rocketship;
-				font-size: 32pt;
-				color: var(--primary-green);
-				letter-spacing: 0.2rem;
-				margin-bottom: 30px;
-			}
+      main {
+        position: relative;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 100px;
+      }
 
-			strong {
-				color: var(--primary-purple);
-			}
+      h1 {
+        font-family: rocketship;
+        font-size: 32pt;
+        color: var(--primary-green);
+        letter-spacing: 0.2rem;
+        margin-bottom: 30px;
+      }
 
-			#enter {
-				width: 302px;
-				height: 129px;
-				margin: 20px 0;
-				background-image: url(src/img/enter-1.png);
-			}
+      strong {
+        color: var(--primary-purple);
+      }
 
-			#enter:hover {
-				background-image: url(src/img/enter-2.png);
-				scale: 1.1;
-			}
+      #enter {
+        width: 302px;
+        height: 129px;
+        margin: 20px 0;
+        background-image: url(src/img/enter-1.png);
+      }
 
-			#teddy {
-				width: 400px;
-				animation: levetate;
-				animation-duration: 1s;
-				animation-iteration-count: infinite;
-				animation-direction: alternate;
-				animation-timing-function: ease-in-out;
-			}
+      #enter:hover {
+        background-image: url(src/img/enter-2.png);
+        scale: 1.1;
+      }
 
-			#teddy-container {
-				position: absolute;
-				top: 50%;
-				left: 75%;
-				transform: rotateY(180deg) rotateZ(-5deg);
-			}
+      #teddy {
+        width: 400px;
+        animation: levetate;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+      }
 
-			#mac {
-				width: 300px;
-				animation: levetate;
-				animation-duration: 2s;
-				animation-iteration-count: infinite;
-				animation-direction: alternate;
-				animation-timing-function: ease-in-out;
-			}
+      #teddy-container {
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        transform: rotateY(180deg) rotateZ(-5deg);
+      }
 
-			#mac-container {
-				position: absolute;
-				top: 10%;
-				left: 5%;
-			}
+      #mac {
+        width: 300px;
+        animation: levetate;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+      }
 
-			@keyframes levetate {
-				from {
-					transform: translateY(0);
-				}
-				to {
-					transform: translateY(-10%);
-				}
-			}
-		</style>
-		<img id="logo" src="src/img/logo-1.png" alt="logo" width="1000px" />
-		<main>
-			<h1>Ahoy there!</h1>
-			<p>
-				Welcome to my lounge!<br /><br />
-				Hope you enjoy your stay and feel free to click around<br /><br />
-				There's plenty to look at and I will have more coming in the
-				future, so stay tuned!<br /><br />
-				<strong>Warning:</strong> This site is not mobile optimized
-				(yet...)<br /><br />
-			</p>
-			<a href="lounge.html">
-				<div id="enter"></div>
-			</a>
-		</main>
-		<div id="teddy-container">
-			<img id="teddy" src="src/img/teddychan.png" alt="" />
-		</div>
-		<div id="mac-container">
-			<img id="mac" src="src/img/mac.png" alt="" />
-		</div>
-	</body>
+      #mac-container {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+      }
+
+      @keyframes levetate {
+        from {
+          transform: translateY(0);
+        }
+        to {
+          transform: translateY(-10%);
+        }
+      }
+    </style>
+    <img id="logo" src="src/img/logo-1.png" alt="logo" width="1000px" />
+    <main>
+      <h1>Ahoy there!</h1>
+      <p>
+        Welcome to my lounge!<br /><br />
+        Hope you enjoy your stay and feel free to click around<br /><br />
+        There's plenty to look at and I will have more coming in the future, so
+        stay tuned!<br /><br />
+        <strong>Warning:</strong> This site is not mobile optimized (yet...)<br /><br />
+      </p>
+      <a href="lounge.html">
+        <div id="enter"></div>
+      </a>
+    </main>
+    <div id="teddy-container">
+      <img id="teddy" src="src/img/teddychan.png" alt="" />
+    </div>
+    <div id="mac-container">
+      <img id="mac" src="src/img/mac.png" alt="" />
+    </div>
+  </body>
 </html>
