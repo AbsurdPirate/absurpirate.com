@@ -26,6 +26,7 @@ const songs = [
 const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
 const logo = document.getElementById("logo");
+let is_animation_running = false;
 
 // Message of the day
 function generateMessage() {
@@ -76,7 +77,10 @@ function loadSite() {
 loadSite();
 
 logo.addEventListener("mouseover", async () => {
+  if (is_animation_running) return;
+  is_animation_running = true;
   logo.classList.add("animated-spin");
   await delay(1000);
   logo.classList.remove("animated-spin");
+  is_animation_running = false;
 });

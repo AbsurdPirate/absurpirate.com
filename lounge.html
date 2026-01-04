@@ -69,71 +69,7 @@
       </nav>
       <!-- END NAV -->
       <!-- CONTENT -->
-      <section id="content">
-        <div id="container">
-          <!-- CHATBOX -->
-          <div id="chat-panel" class="win-panel item">
-            <h3>Chat with other visitors!</h3>
-            <div class="content" style="height: 250px">
-              <iframe
-                src="https://iframe.chat/embed?chat=88527056"
-                id="chattable"
-                frameborder="none"
-              ></iframe>
-              <script>
-                chattable.initialize({
-                  theme: "Windows XP",
-                });
-              </script>
-            </div>
-          </div>
-          <!-- END CHATBOX -->
-          <div>
-            <!-- CHANGELOG -->
-            <iframe
-              class="item"
-              style="
-                background-color: yellow;
-                border-top: 20px solid rgb(95, 79, 58);
-                height: 230px;
-                width: 250px;
-              "
-              src="src/docs/changelogs/v1-0.md"
-              frameborder="0"
-            ></iframe>
-            <!-- END CHANGELOG -->
-            <!-- WEBRING-->
-            <webring-css
-              site="https://absurdpirate.com/"
-              custom-style="
-                 .webring { border: 15px ridge var(--primary-purple); width: 200px; height: 100px; background: #fff; ; font-size: 9pt;}
-                 .webring a { color: var(--primary-green); }
-                 .icon { font-size: 80px; color: orange; }
-               "
-              class="item"
-            >
-            </webring-css>
-            <script src="https://atignister.github.io/webring_simplechats.js"></script>
-            <!-- WEBRING-->
-          </div>
-          <!-- JUKEBOX -->
-          <div class="win-panel">
-            <h3>Jukebox (coming soon...)</h3>
-            <div class="content" id="jukebox">
-              <img src="src/img/ipod.png" alt="" height="150px" />
-              <div id="control-center">
-                <audio controls>
-                  <source src="horse.ogg" type="audio/ogg" />
-                  <source src="horse.mp3" type="audio/mpeg" />
-                  Your browser does not support the audio element.
-                </audio>
-                <div id="selection"></div>
-              </div>
-            </div>
-          </div>
-          <!-- END JUKEBOX -->
-        </div>
-      </section>
+      <section id="content"></section>
       <!-- END CONTENT -->
     </main>
     <!-- END MAIN -->
